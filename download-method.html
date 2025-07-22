@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IFoxer ダウンロード方法</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <nav class="bg-blue-700 text-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
+      <div class="flex items-center gap-2">
+        <i class="fa-solid fa-globe fa-lg"></i>
+        <span class="font-bold text-xl tracking-wide">IFoxer</span>
+      </div>
+      <div class="space-x-6 text-base font-semibold">
+        <a href="index.html" class="hover:text-blue-200">ホーム</a>
+        <a href="docs.html" class="hover:text-blue-200">ドキュメント</a>
+        <a href="download.html" class="hover:text-blue-200">ダウンロード</a>
+        <a href="download-method.html" class="hover:text-blue-200">ダウンロード方法</a>
+      </div>
+    </div>
+  </nav>
+  <section class="py-20 px-4 bg-white">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-3xl font-bold mb-10 text-blue-700">ダウンロード方法</h1>
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold mb-4"><i class="fa-solid fa-box-open mr-2"></i>インストーラーで導入（推奨）</h2>
+        <ol class="list-decimal list-inside text-lg mb-4">
+          <li>最新版の <b>installer.7z</b> を<a href="download.html" class="underline text-blue-600">ダウンロード</a>し、解凍</li>
+          <li>フォルダ内の <b>install.ps1</b> を右クリックし「PowerShellで実行」</li>
+          <li>（スクリプト実行がブロックされた場合は <code>Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process</code> を実行）</li>
+          <li>ウィザードに従いインストール先やショートカットを設定</li>
+          <li>必要なコンポーネント（.NET 9 SDK, WebView2 Runtime）が未インストールなら自動案内</li>
+        </ol>
+        <img src="Install.png" alt="ダウンロード方法の例" class="rounded-xl shadow mb-8 mx-auto">
+      </div>
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold mb-4"><i class="fa-solid fa-code-branch mr-2"></i>ソースからビルド（開発者向け）</h2>
+        <ol class="list-decimal list-inside text-lg mb-4">
+          <li>.NET 9.0 SDKをインストール</li>
+          <li>リポジトリをクローンまたはZIPでダウンロードし解凍</li>
+          <li>プロジェクトルートで <code>dotnet build</code> を実行</li>
+          <li>bin/Debug/net9.0-windows/ 内の IFoxer.exe を起動</li>
+        </ol>
+        <img src="build.png" alt="ビルド例" class="rounded-xl shadow mb-8 mx-auto">
+      </div>
+      <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-base">
+        <i class="fa-solid fa-triangle-exclamation text-yellow-500 mr-2"></i>
+        <b>ヒント：</b> 7zファイルの解凍には<a href="https://www.7-zip.org/" class="underline text-blue-600" target="_blank" rel="noopener noreferrer">7-Zip</a>などのソフトが便利です。
+      </div>
+    </div>
+  </section>
+  <footer class="bg-blue-900 text-white text-center py-8 mt-12">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 px-6">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-globe fa-lg"></i>
+          <span class="font-bold text-lg">IFoxer</span>
+        </div>
+        <div class="space-x-6 text-sm">
+          <a href="index.html" class="hover:underline">ホーム</a>
+          <a href="docs.html" class="hover:underline">ドキュメント</a>
+          <a href="download.html" class="hover:underline">ダウンロード</a>
+          <a href="download-method.html" class="hover:underline">ダウンロード方法</a>
+        </div>
+        <div class="text-xs text-gray-300">&copy; 2024 IFoxer Project. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html> 

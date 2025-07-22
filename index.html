@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IFoxer - オープンソース軽量ブラウザ</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <!-- ナビゲーションバー -->
+  <nav class="bg-blue-700 text-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
+      <div class="flex items-center gap-2">
+        <i class="fa-solid fa-globe fa-lg"></i>
+        <span class="font-bold text-xl tracking-wide">IFoxer</span>
+      </div>
+      <div class="space-x-6 text-base font-semibold">
+        <a href="#features" class="hover:text-blue-200">特徴</a>
+        <a href="#tech" class="hover:text-blue-200">技術</a>
+        <a href="#usage" class="hover:text-blue-200">使い方</a>
+        <a href="#contribute" class="hover:text-blue-200">貢献</a>
+        <a href="#faq" class="hover:text-blue-200">FAQ</a>
+        <a href="#support" class="hover:text-blue-200">サポート</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ヒーローセクション -->
+  <section class="bg-gradient-to-br from-blue-700 to-blue-400 text-white py-20 px-4">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+      <div class="flex-1">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight drop-shadow">C# & .NET 9製<br><span class="text-yellow-300 break-keep inline-block">オープンソース軽量ブラウザ</span><br>IFoxer</h1>
+        <p class="text-lg md:text-xl mb-8">カスタマイズ性とマルチタスクを重視した、<br>最新Web標準対応のモダンなWindowsブラウザ。</p>
+        <a href="download.html" class="inline-block bg-yellow-300 text-blue-900 font-bold px-8 py-4 rounded-lg shadow-lg hover:bg-yellow-200 transition">今すぐ始める</a>
+      </div>
+      <div class="flex-1 flex justify-center">
+        <img src="UI.png" alt="IFoxer UI" class="rounded-xl shadow-2xl border-4 border-white">
+      </div>
+    </div>
+  </section>
+
+  <!-- 特徴セクション -->
+  <section id="features" class="py-20 px-4 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12">主な特徴</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="bg-gray-100 rounded-xl p-8 shadow flex flex-col items-center">
+          <i class="fa-solid fa-folder-tree text-blue-600 text-4xl mb-4"></i>
+          <h3 class="font-bold text-xl mb-2">タブブラウジング</h3>
+          <ul class="list-disc list-inside text-left text-base">
+            <li>直感的なタブ追加・切替・閉じる</li>
+            <li>ドラッグ&ドロップで順序変更</li>
+            <li>マウス中ボタンでタブを閉じる</li>
+          </ul>
+        </div>
+        <div class="bg-gray-100 rounded-xl p-8 shadow flex flex-col items-center">
+          <i class="fa-solid fa-star text-blue-600 text-4xl mb-4"></i>
+          <h3 class="font-bold text-xl mb-2">ブックマーク管理</h3>
+          <ul class="list-disc list-inside text-left text-base">
+            <li>ワンクリックでお気に入り登録</li>
+            <li>ブックマーク一覧から簡単遷移</li>
+          </ul>
+        </div>
+        <div class="bg-gray-100 rounded-xl p-8 shadow flex flex-col items-center">
+          <i class="fa-solid fa-clock-rotate-left text-blue-600 text-4xl mb-4"></i>
+          <h3 class="font-bold text-xl mb-2">履歴・ダウンロード管理</h3>
+          <ul class="list-disc list-inside text-left text-base">
+            <li>閲覧履歴をいつでも再訪</li>
+            <li>ダウンロード履歴も一括管理</li>
+          </ul>
+        </div>
+        <div class="bg-gray-100 rounded-xl p-8 shadow flex flex-col items-center">
+          <i class="fa-solid fa-sliders text-blue-600 text-4xl mb-4"></i>
+          <h3 class="font-bold text-xl mb-2">高度なカスタマイズ</h3>
+          <ul class="list-disc list-inside text-left text-base">
+            <li>検索エンジンを自由に切替</li>
+            <li>テーマカラーも自在に変更</li>
+          </ul>
+        </div>
+        <div class="bg-gray-100 rounded-xl p-8 shadow flex flex-col items-center">
+          <i class="fa-solid fa-code text-blue-600 text-4xl mb-4"></i>
+          <h3 class="font-bold text-xl mb-2">学習・開発素材</h3>
+          <ul class="list-disc list-inside text-left text-base">
+            <li>Windows Formsアプリ開発の教材に最適</li>
+            <li>自作ブラウザ開発の出発点に</li>
+          </ul>
+        </div>
+        <div class="bg-gray-100 rounded-xl p-8 shadow flex flex-col items-center">
+          <i class="fa-solid fa-paint-brush text-blue-600 text-4xl mb-4"></i>
+          <h3 class="font-bold text-xl mb-2">美しいUI</h3>
+          <ul class="list-disc list-inside text-left text-base">
+            <li>Microsoft風の洗練デザイン</li>
+            <li>直感的で使いやすい操作感</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 技術スタック -->
+  <section id="tech" class="py-20 px-4 bg-gray-50">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12">技術スタック</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div class="flex items-start gap-6">
+          <i class="fa-brands fa-microsoft text-blue-700 text-5xl"></i>
+          <div>
+            <h3 class="font-bold text-lg mb-1">C# 12 & .NET 9</h3>
+            <p>最新のC#と.NET 9でアプリのコアロジックを構築。</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-6">
+          <i class="fa-solid fa-window-restore text-blue-700 text-5xl"></i>
+          <div>
+            <h3 class="font-bold text-lg mb-1">Windows Forms</h3>
+            <p>デスクトップアプリとしてUIを構築。学習にも最適。</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-6">
+          <i class="fa-brands fa-edge text-blue-700 text-5xl"></i>
+          <div>
+            <h3 class="font-bold text-lg mb-1">Microsoft Edge WebView2</h3>
+            <p>ChromiumベースのWebView2で最新Web標準に対応。</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-6">
+          <i class="fa-solid fa-terminal text-blue-700 text-5xl"></i>
+          <div>
+            <h3 class="font-bold text-lg mb-1">PowerShell</h3>
+            <p>インストーラーはPowerShellで自動化。セットアップも簡単。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- 使い方 -->
+  <section id="usage" class="py-20 px-4 bg-gray-50">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10">基本的な使い方</h2>
+      <div class="grid md:grid-cols-2 gap-10">
+        <div class="bg-white rounded-xl shadow p-8">
+          <h3 class="font-bold text-lg mb-2"><i class="fa-solid fa-location-arrow mr-2 text-blue-600"></i>ナビゲーション</h3>
+          <p>上部のアドレスバーにURLを入力してWebサイトを閲覧。戻る・進む・再読み込みボタンも利用可能。</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-8">
+          <h3 class="font-bold text-lg mb-2"><i class="fa-solid fa-gear mr-2 text-blue-600"></i>設定</h3>
+          <p>右上のメニューボタンから設定画面を開き、検索エンジンやテーマカラーを変更できます。</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-8">
+          <h3 class="font-bold text-lg mb-2"><i class="fa-solid fa-star mr-2 text-blue-600"></i>ブックマーク追加</h3>
+          <p>アドレスバー横の星ボタンで、現在のページをお気に入りに追加。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- コントリビュート -->
+  <section id="contribute" class="py-20 px-4 bg-white">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10">コントリビュート（貢献）</h2>
+      <p class="text-center mb-8">IFoxerはオープンソースプロジェクトです。バグ報告・機能提案・プルリクエストなど、どなたでも歓迎します！</p>
+      <div class="bg-gray-100 rounded-xl shadow p-8">
+        <ol class="list-decimal list-inside text-base mb-2">
+          <li>改善したい点があれば、Issueを立ててディスカッション</li>
+          <li>リポジトリをForkし、<code>git checkout -b feature/新機能名</code> でブランチ作成</li>
+          <li>変更をコミット（例：<code>git commit -m 'Add AmazingFeature'</code>）</li>
+          <li>GitHubにプッシュし、Pull Requestを作成</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQセクション -->
+  <section id="faq" class="py-20 px-4 bg-gray-50">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10">よくある質問（FAQ）</h2>
+      <div class="space-y-8">
+        <div class="bg-white rounded-xl shadow p-6">
+          <h3 class="font-bold text-lg mb-2"><i class="fa-solid fa-shield-virus mr-2 text-blue-600"></i>インストール時にウイルス警告が出ます</h3>
+          <p>一部のセキュリティソフトで誤検知される場合がありますが、公式配布ファイルをご利用ください。</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6">
+          <h3 class="font-bold text-lg mb-2"><i class="fa-solid fa-box-archive mr-2 text-blue-600"></i>7zファイルが開けません</h3>
+          <p><a href="https://www.7-zip.org/" class="underline text-blue-600" target="_blank" rel="noopener noreferrer">7-Zip</a>などの解凍ソフトをインストールしてください。</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6">
+          <h3 class="font-bold text-lg mb-2"><i class="fa-solid fa-laptop mr-2 text-blue-600"></i>動作環境は？</h3>
+          <p>Windows 10以降を推奨します。</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6">
+          <h3 class="font-bold text-lg mb-2"><i class="fa-solid fa-headset mr-2 text-blue-600"></i>サポートはありますか？</h3>
+          <p>現在はコミュニティベースのサポートを提供しています。ご質問は公式サイトのお問い合わせフォームからどうぞ。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- サポート・お問い合わせセクション -->
+  <section id="support" class="py-20 px-4 bg-white">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10">サポート・お問い合わせ</h2>
+      <div class="bg-blue-50 rounded-xl shadow p-8 flex flex-col items-center">
+        <p class="mb-4 text-lg">ご質問・ご要望・不具合報告などは、下記メールアドレスまでご連絡ください。</p>
+        <a href="mailto:support@ifoxer.com" class="btn bg-blue-600 text-white hover:bg-blue-700"><i class="fa-solid fa-envelope mr-2"></i>Dreeam00@proton.me</a>
+        <p class="text-sm text-gray-500 mt-4">※ 返信には数日かかる場合があります。ご了承ください。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="bg-blue-900 text-white text-center py-8 mt-12">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 px-6">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-globe fa-lg"></i>
+          <span class="font-bold text-lg">IFoxer</span>
+        </div>
+        <div class="space-x-6 text-sm">
+          <a href="download.html" class="hover:underline">ダウンロード</a>
+          <a href="docs.html" class="hover:underline">ドキュメント</a>
+          <a href="download-method.html" class="hover:underline">ダウンロード方法</a>
+        </div>
+        <div class="text-xs text-gray-300">&copy; 2024 IFoxer Project. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html> 
